@@ -6,23 +6,24 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `npm start`
+### 1. `npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Install your dependencies
 
-Here by calling this, only run front end.
+### 2. Add your OPENAI secret API Key
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+under /server, add an '.env' file, add your openAI API key using the following template:
+REACT_APP_OPENAI_API_KEY='YOUR_KEY'
 
-### `npm test`
+### 3. Change your chatgpt moudule
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Change openai moudule within /server/chat.js
 
-### `npm run dev`
+### 4. `npm run dev`
 
 run frontend and backend. To satert this project, do 'npm run dev'
 
-### change your chatgpt moudule within /server/chat.js
+### 5. `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
